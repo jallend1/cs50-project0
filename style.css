@@ -1,21 +1,40 @@
-#container{
-    width: 80%;
-    margin: auto;
+#container {
+  width: 80%;
+  margin: auto;
 }
 
-
-ul{
-    width: 100%;
-    /* display: flex;
-    flex-direction: row-reverse; */
+li {
+  list-style-type: none;
+  padding: 10px;
 }
 
-li{
-    list-style-type: none;
-    padding: 10px;
+h1 {
+  text-align: center;
+  padding: 0.5em;
 }
 
-h1{
-    text-align: center;
-    padding: .5em;
+header {
+  height: 256px;
+  background-image: url("blue.png");
+  animation-duration: 3s;
+  animation-name: movespace;
+  animation-iteration-count: infinite;
 }
+header h1 {
+  color: white;
+}
+
+#bio {
+  text-align: center;
+}
+
+@keyframes movespace {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

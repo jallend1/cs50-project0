@@ -1,0 +1,41 @@
+$image: 'blue.png';
+
+#container{
+    width: 80%;
+    margin: auto;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    padding: .5em;
+}
+
+header{
+    height: 256px;
+    background-image: url($image);
+    animation-duration: 3s;
+    animation-name: movespace;
+    animation-iteration-count: infinite;
+    h1 {
+        color: white;
+    }
+}
+
+
+#bio{
+    text-align: center;
+}
+
+@keyframes movespace {
+    from {
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(100%);
+    }
+}
