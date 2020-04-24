@@ -18,14 +18,11 @@ h1{
 header{
     height: 256px;
     background-image: url($image);
-    animation-duration: 3s;
-    animation-name: movespace;
-    animation-iteration-count: infinite;
+    animation: movespace 5s linear infinite;
     h1 {
         color: white;
     }
 }
-
 
 #bio{
     text-align: center;
@@ -33,9 +30,9 @@ header{
 
 @keyframes movespace {
     from {
-        transform: translateY(0%);
+        background-position-y: 0;
     }
     to{
-        transform: translateY(100%);
+        background-position-y: 256;
     }
 }

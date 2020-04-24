@@ -16,9 +16,7 @@ h1 {
 header {
   height: 256px;
   background-image: url("blue.png");
-  animation-duration: 3s;
-  animation-name: movespace;
-  animation-iteration-count: infinite;
+  animation: movespace 5s linear infinite;
 }
 header h1 {
   color: white;
@@ -30,10 +28,10 @@ header h1 {
 
 @keyframes movespace {
   from {
-    transform: translateY(0%);
+    background-position-y: 0;
   }
   to {
-    transform: translateY(100%);
+    background-position-y: 256;
   }
 }
 
