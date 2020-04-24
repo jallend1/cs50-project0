@@ -1,38 +1,40 @@
 $image: 'blue.png';
 
+spacingDefaults{
+    padding: .5em;
+}
+
 #container{
     width: 80%;
     margin: auto;
 }
 
 li{
+    @extend spacingDefaults;
     list-style-type: none;
-    padding: 10px;
 }
 
 h1{
+    @extend spacingDefaults;
     text-align: center;
-    padding: .5em;
+    color: white;
 }
 
 header{
     height: 256px;
-    background-image: url($image);
-    animation: movespace 5s linear infinite;
-    h1 {
-        color: white;
-    }
+    background: url($image);
 }
 
 #bio{
     text-align: center;
 }
 
-@keyframes movespace {
-    from {
-        background-position-y: 0;
+@media screen and (max-width: 800px){
+    body{
+        background: gray;
     }
-    to{
-        background-position-y: 256;
+    header{
+        background: black;
+        height: 100%;
     }
 }

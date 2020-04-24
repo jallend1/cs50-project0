@@ -1,3 +1,7 @@
+spacingDefaults, h1, li {
+  padding: 0.5em;
+}
+
 #container {
   width: 80%;
   margin: auto;
@@ -5,33 +9,30 @@
 
 li {
   list-style-type: none;
-  padding: 10px;
 }
 
 h1 {
   text-align: center;
-  padding: 0.5em;
+  color: white;
 }
 
 header {
   height: 256px;
-  background-image: url("blue.png");
-  animation: movespace 5s linear infinite;
-}
-header h1 {
-  color: white;
+  background: url("blue.png");
 }
 
 #bio {
   text-align: center;
 }
 
-@keyframes movespace {
-  from {
-    background-position-y: 0;
+@media screen and (max-width: 800px) {
+  body {
+    background: gray;
   }
-  to {
-    background-position-y: 256;
+
+  header {
+    background: black;
+    height: 100%;
   }
 }
 
