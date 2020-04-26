@@ -21,7 +21,6 @@ h1{
 }
 
 header{
-    height: 256px;
     background: url($image);
 }
 
@@ -35,6 +34,5 @@ header{
     }
     header{
         background: black;
-        height: 100%;
     }
 }
